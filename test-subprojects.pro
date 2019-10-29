@@ -3,10 +3,10 @@ TEMPLATE = subdirs
 SUBDIRS += \
     app1 \
     app2 \
-    extlib \
-    lib
+    header-only \
+    core
 
-app1.depends = lib
-app2.depends = lib
+app1.depends = core
+app2.depends = core
 
-#OTHER_FILES += extlib/*
+#OTHER_FILES += header-only/*

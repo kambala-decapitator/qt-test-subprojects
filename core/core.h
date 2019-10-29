@@ -1,10 +1,10 @@
 #ifndef LIB_H
 #define LIB_H
 
-class Lib
+class Core
 {
 public:
-    Lib();
+    Core();
     int a;
 };
 

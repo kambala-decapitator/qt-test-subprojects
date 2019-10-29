@@ -1,14 +1,14 @@
 #include <iostream>
 
-#include "lib.h"
+#include "core.h"
 
-#include "extlib.hpp"
+#include "header-only.hpp"
 
 using namespace std;
 
 int main()
 {
-    Lib l;
+    Core l;
     cout << ext::f<char>() << " " << l.a << endl;
     return 0;
 }

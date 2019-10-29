@@ -6,8 +6,8 @@ CONFIG -= qt
 SOURCES += \
         main.cpp
 
-include(../lib/lib.pri)
-include(../extlib/extlib.pri)
+include(../core/core.pri)
+include(../header-only/header-only.pri)
 
 # common
 

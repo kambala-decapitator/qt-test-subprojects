@@ -2,4 +2,4 @@ requires(false)
 TEMPLATE = subdirs
 
 HEADERS += \
-    extlib.hpp
+    header-only.hpp
