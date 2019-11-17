@@ -1,7 +1,7 @@
 include(libtarget.pri)
 
-win32:!g++: libFilename = $${LIBTARGET}.lib
-else:       libFilename = lib$${LIBTARGET}.a
+win32:!win32-g++: libFilename = $${LIBTARGET}.lib
+else:             libFilename = lib$${LIBTARGET}.a
 
 win32 {
   CONFIG(debug, debug|release): outLibDir = $${LIBTARGET}/debug
