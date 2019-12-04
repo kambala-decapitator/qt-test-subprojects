@@ -1,1 +1,2 @@
 INCLUDEPATH *= $${PWD}
+DEPENDPATH *= $${PWD}

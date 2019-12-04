@@ -1,1 +1,1 @@
-LIBTARGET=core
+LIBTARGET = core

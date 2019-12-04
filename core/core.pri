@@ -13,3 +13,4 @@ LIBS += -L$${OUT_PWD}/../$${outLibDir}/ -l$${LIBTARGET}
 PRE_TARGETDEPS += $${OUT_PWD}/../$${outLibDir}/$${libFilename}
 
 INCLUDEPATH *= $${PWD}
+DEPENDPATH *= $${PWD}
