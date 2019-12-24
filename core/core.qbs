@@ -1,9 +1,6 @@
-Product {
+DynamicLibrary {
   name: "core"
-  cpp.cxxLanguageVersion: "c++11"
-  files: ["core.h", "core.cpp"]
-  Depends { name: "cpp" }
-  Depends { name: "header-only" }
+  Depends { name: "core-static"; cpp.linkWholeArchive: true }
   Export {
     Depends { name: "cpp" }
     cpp.includePaths: [product.sourceDirectory]
