@@ -1,4 +1,4 @@
-StaticLibrary {
+Product {
   name: "core"
   cpp.cxxLanguageVersion: "c++11"
   files: ["core.h", "core.cpp"]

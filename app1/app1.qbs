@@ -3,6 +3,6 @@ CppApplication {
   consoleApplication: true
   cpp.cxxLanguageVersion: "c++11"
   files: ["main.cpp"]
-  Depends { name: "core" }
+  Depends { name: "core-static" }
   Depends { name: "header-only" }
 }
