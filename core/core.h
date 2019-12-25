@@ -1,7 +1,13 @@
 #ifndef LIB_H
 #define LIB_H
 
-class Core
+#ifdef CORE_STATIC
+#define CORE_EXPORT
+#else
+#include "core_dynamic.h"
+#endif
+
+class CORE_EXPORT Core
 {
 public:
     Core();
