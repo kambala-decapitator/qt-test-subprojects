@@ -4,5 +4,4 @@ CppApplication {
   cpp.cxxLanguageVersion: "c++11"
   files: ["main.cpp"]
   Depends { name: "core-static" }
-  Depends { name: "header-only" }
 }

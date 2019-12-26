@@ -3,6 +3,5 @@ QtGuiApplication {
   files: ["main.cpp"]
   Depends { name: "Qt.widgets" }
   Depends { name: "core" }
-  Depends { name: "header-only" }
   Depends { name: "sharedLib" }
 }

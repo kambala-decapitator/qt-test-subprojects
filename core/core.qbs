@@ -7,6 +7,7 @@ NativeBinary {
   Depends { name: "header-only" }
   Export {
     Depends { name: "cpp" }
+    Depends { name: "header-only" }
     cpp.includePaths: [product.sourceDirectory]
     cpp.defines: product.exportedDefines
   }
