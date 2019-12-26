@@ -1,7 +1,6 @@
-Product {
+NativeBinary {
   property stringList exportedDefines: []
 
-  name: "core"
   cpp.cxxLanguageVersion: "c++11"
   files: ["core.h", "core.cpp"]
   Depends { name: "cpp" }
