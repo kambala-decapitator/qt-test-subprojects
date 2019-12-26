@@ -1,13 +1,10 @@
-StaticLibrary {
+import "core.qbs" as Core
+
+Core {
+  property stringList commonDefines: ["CORE_STATIC"]
+  exportedDefines: commonDefines
+
   name: "core-static"
-  cpp.cxxLanguageVersion: "c++11"
-  cpp.defines: "CORE_STATIC"
-  files: ["core.h", "core.cpp"]
-  Depends { name: "cpp" }
-  Depends { name: "header-only" }
-  Export {
-    Depends { name: "cpp" }
-    cpp.defines: "CORE_STATIC"
-    cpp.includePaths: [product.sourceDirectory]
-  }
+  type: "staticlibrary"
+  cpp.defines: base.concat(commonDefines)
 }
